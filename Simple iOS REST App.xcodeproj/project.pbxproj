@@ -408,6 +408,7 @@
 				950986BE1BB061F7003422FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		950986BF1BB061F7003422FF /* Build configuration list for PBXNativeTarget "Simple iOS REST AppTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +417,7 @@
 				950986C11BB061F7003422FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

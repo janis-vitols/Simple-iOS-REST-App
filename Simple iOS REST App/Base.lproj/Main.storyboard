@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Simple_iOS_REST_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +16,61 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N39-PW-6Ay">
+                                <rect key="frame" x="36" y="120" width="528" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oa7-Du-XOg">
+                                <rect key="frame" x="269" y="170" width="38" height="30"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2mg-ON-I9Q"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="login" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vyc-pV-AEd">
+                                <rect key="frame" x="36" y="70" width="528" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N39-PW-6Ay" firstAttribute="top" secondItem="vyc-pV-AEd" secondAttribute="bottom" constant="20" id="0yQ-g3-AgT"/>
+                            <constraint firstItem="vyc-pV-AEd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="83o-b0-iv8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vyc-pV-AEd" secondAttribute="trailing" constant="20" id="9lw-xs-YDo"/>
+                            <constraint firstItem="oa7-Du-XOg" firstAttribute="top" secondItem="N39-PW-6Ay" secondAttribute="bottom" constant="20" id="BPE-4t-wqp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="N39-PW-6Ay" secondAttribute="trailing" constant="20" id="Bvf-yL-drk"/>
+                            <constraint firstItem="vyc-pV-AEd" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="50" id="Dyv-p8-ole"/>
+                            <constraint firstItem="N39-PW-6Ay" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="EGY-Zd-Lee"/>
+                            <constraint firstItem="N39-PW-6Ay" firstAttribute="top" secondItem="vyc-pV-AEd" secondAttribute="bottom" constant="20" id="SdH-pB-fDy"/>
+                            <constraint firstAttribute="centerX" secondItem="N39-PW-6Ay" secondAttribute="centerX" id="UQo-bM-KUx"/>
+                            <constraint firstItem="oa7-Du-XOg" firstAttribute="top" secondItem="N39-PW-6Ay" secondAttribute="bottom" constant="20" id="Xei-pg-wbu"/>
+                            <constraint firstItem="vyc-pV-AEd" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="50" id="Yra-WM-Yx1"/>
+                            <constraint firstAttribute="centerX" secondItem="vyc-pV-AEd" secondAttribute="centerX" id="dr8-8W-ih3"/>
+                            <constraint firstAttribute="centerX" secondItem="N39-PW-6Ay" secondAttribute="centerX" constant="11" id="fQR-b6-mCs"/>
+                            <constraint firstAttribute="centerX" secondItem="oa7-Du-XOg" secondAttribute="centerX" constant="12" id="frt-ha-f4r"/>
+                            <constraint firstAttribute="centerX" secondItem="vyc-pV-AEd" secondAttribute="centerX" constant="-87" id="trd-9t-MhC"/>
+                            <constraint firstAttribute="centerX" secondItem="oa7-Du-XOg" secondAttribute="centerX" constant="12" id="u9d-KR-RXS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Dyv-p8-ole"/>
+                                <exclude reference="trd-9t-MhC"/>
+                                <exclude reference="SdH-pB-fDy"/>
+                                <exclude reference="fQR-b6-mCs"/>
+                                <exclude reference="BPE-4t-wqp"/>
+                                <exclude reference="frt-ha-f4r"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="loginField" destination="vyc-pV-AEd" id="5W4-37-yWQ"/>
+                        <outlet property="passwordField" destination="N39-PW-6Ay" id="bVg-rF-Tvn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
