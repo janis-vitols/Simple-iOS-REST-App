@@ -13,6 +13,7 @@
 		950986AA1BB061F7003422FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 950986A91BB061F7003422FF /* Images.xcassets */; };
 		950986AD1BB061F7003422FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 950986AB1BB061F7003422FF /* LaunchScreen.xib */; };
 		950986B91BB061F7003422FF /* Simple_iOS_REST_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950986B81BB061F7003422FF /* Simple_iOS_REST_AppTests.swift */; };
+		95B40FBA1BB16F5200E95E42 /* session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B40FB91BB16F5200E95E42 /* session.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		950986B21BB061F7003422FF /* Simple iOS REST AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple iOS REST AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		950986B71BB061F7003422FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		950986B81BB061F7003422FF /* Simple_iOS_REST_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_iOS_REST_AppTests.swift; sourceTree = "<group>"; };
+		95B40FB91BB16F5200E95E42 /* session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = session.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		9509869F1BB061F7003422FF /* Simple iOS REST App */ = {
 			isa = PBXGroup;
 			children = (
+				95B40FB81BB16F4600E95E42 /* lib */,
 				950986A21BB061F7003422FF /* AppDelegate.swift */,
 				950986A41BB061F7003422FF /* ViewController.swift */,
 				950986A61BB061F7003422FF /* Main.storyboard */,
@@ -110,6 +113,14 @@
 				950986B71BB061F7003422FF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95B40FB81BB16F4600E95E42 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				95B40FB91BB16F5200E95E42 /* session.swift */,
+			);
+			name = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +224,7 @@
 			files = (
 				950986A51BB061F7003422FF /* ViewController.swift in Sources */,
 				950986A31BB061F7003422FF /* AppDelegate.swift in Sources */,
+				95B40FBA1BB16F5200E95E42 /* session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
